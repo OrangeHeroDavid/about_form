@@ -58,5 +58,4 @@ class RegForm(forms.Form):
         if pwd != re_pwd:
             self.add_error('re_pwd', '两次密码不一致!!@!')
             raise ValidationError('两次密码不一致')
-
         return self.cleaned_data
